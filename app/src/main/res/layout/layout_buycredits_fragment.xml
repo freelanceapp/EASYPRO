@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/buy_credits_back"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="16dp"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:id="@+id/ll_gotosub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_gotosub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="4dp"
+                android:text="On Go Subsription"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textStyle="normal" />
+
+            <View
+                android:id="@+id/view_gs"
+                android:layout_width="150dp"
+                android:layout_height="3dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_monsub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_monsub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="4dp"
+                android:text="Monthly Subscription"
+                android:textAlignment="center"
+                android:textColor="@color/gray_f"
+                android:textStyle="normal" />
+
+            <View
+                android:id="@+id/view_ms"
+                android:visibility="gone"
+                android:layout_width="156dp"
+                android:layout_height="3dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="We Look after you!"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Try our best Subription Plans"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textStyle="normal" />
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/vp_gift_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_monthly_coupan"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingBottom="20dp"
+        android:paddingTop="30dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="6dp"
+            android:text="1."
+            android:textAlignment="center"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/gray_a" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="18dp"
+            android:text="Unlimited Credits"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="14dp"
+            android:paddingTop="16dp"
+            android:paddingRight="14dp"
+            android:paddingBottom="16dp"
+            android:text="RS 3500/-"
+            android:textAlignment="center"
+            android:textColor="@color/app_color"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:textSize="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:padding="6dp"
+            android:text="This also includes"
+            android:textAlignment="center"
+            android:textStyle="normal" />
+
+        <TextView
+            android:textSize="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="40dp"
+            android:paddingRight="60dp"
+            android:text="Social Media Features Blog Coverages"
+            android:textAlignment="center"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_buy_coupan"
+            android:textSize="16dp"
+            android:layout_width="180dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="30dp"
+            android:background="@drawable/app_background_color_a"
+            android:text="Buy"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:id="@+id/layout_Dots"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="60dp"
+        android:layout_height="60dp"/>
+</LinearLayout>

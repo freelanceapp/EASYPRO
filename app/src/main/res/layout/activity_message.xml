@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.MessageActivity">
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/app_color"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <ImageView
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_back_arrow" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/image_profile"
+            android:layout_width="48dp"
+            android:layout_height="48dp" />
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="6dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="David Beckham"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+            <TextView
+                android:textStyle="normal"
+                android:textSize="10sp"
+                android:text="online"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <ScrollView
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ListView
+        android:layout_margin="10dp"
+        android:id="@+id/lv_messages1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ListView
+        android:layout_margin="10dp"
+        android:id="@+id/lv_messages2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/et_message"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="5dp"
+            android:background="@color/gray_h" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <EditText
+                android:layout_marginLeft="5dp"
+                android:id="@+id/et_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center_vertical"
+                android:layout_toLeftOf="@+id/ll_import_file"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="bottom"
+                android:hint="Type Message"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray_g" />
+
+            <LinearLayout
+                android:layout_weight="2"
+                android:id="@+id/ll_import_file"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingRight="5dp"
+                android:weightSum="3">
+
+                <ImageView
+                    android:id="@+id/iv_camera"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_camera"
+                    android:tint="@color/icon_color" />
+
+                <ImageView
+                    android:id="@+id/iv_pin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_pin" />
+
+                <ImageView
+                    android:id="@+id/iv_mic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_mic_34"
+                    android:tint="@color/icon_color" />
+            </LinearLayout>
+        </LinearLayout>
+</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <View
+                android:background="@color/gray_a"
+                android:layout_width="fill_parent"
+                android:layout_height="0.3dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="INVOICE"
+                    android:textAlignment="center"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="DATE"
+                    android:textAlignment="center"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="PACKAGE"
+                    android:textAlignment="center"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="PAYMENT METHOD"
+                    android:textAlignment="center"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:textAlignment="viewEnd"
+                    android:textStyle="normal" />
+            </LinearLayout>
+            <View
+                android:background="@color/gray_a"
+                android:layout_width="fill_parent"
+                android:layout_height="0.3dp"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rclv_transaction"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </ScrollView>
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>

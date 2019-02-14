@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:padding="18dp"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="360dp">
+<LinearLayout
+    android:padding="10dp"
+    android:weightSum="2"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_weight="1"
+        android:textStyle="normal"
+        android:textColor="@color/black"
+        android:text="INVOICE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_weight="1"
+        android:textAlignment="viewEnd"
+        android:layout_gravity="end"
+        android:gravity="end"
+        android:textStyle="normal"
+        android:text="268"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+    <LinearLayout
+        android:padding="10dp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:text="DATE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_weight="1"
+            android:textAlignment="viewEnd"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:textStyle="normal"
+            android:text="10-02-2019"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="PACKAGE"
+            android:textColor="@color/black"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="Monthly"
+            android:textAlignment="viewEnd"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="PAYMENT MODE"
+            android:textColor="@color/black"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="Easy Pay"
+            android:textAlignment="viewEnd"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CREDITS"
+            android:textColor="@color/black"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="Unlimited"
+            android:textAlignment="viewEnd"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="STATUS"
+            android:textColor="@color/black"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="Paid"
+            android:textAlignment="viewEnd"
+            android:textStyle="normal" />
+    </LinearLayout>
+<Button
+    android:id="@+id/btn_close"
+    android:layout_margin="40dp"
+    android:textStyle="bold"
+    android:textColor="@color/white"
+    android:text="close"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/app_background_color_a"
+    android:layout_width="150dp"
+    android:layout_height="36dp" />
+</LinearLayout>

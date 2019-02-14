@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/white"
+    android:padding="10dp"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_margin="5dp"
+        android:layout_gravity="top"
+        android:src="@drawable/ic_bullet"
+        android:layout_width="10dp"
+        android:layout_height="10dp" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Room Furniture"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_weight="2"
+                android:gravity="end"
+                android:text="01/02/2019"
+                android:textAlignment="viewEnd"
+                android:textStyle="normal" />
+        </LinearLayout>
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Home office renovatin and construction"
+                android:textColor="@color/black"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_weight="2"
+                android:gravity="end"
+                android:text="12:40 PM"
+                android:textAlignment="viewEnd"
+                android:textStyle="normal" />
+        </LinearLayout>
+        <LinearLayout
+            android:padding="20dp"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_send_quote"
+                android:padding="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:textStyle="normal"
+                android:textColor="@color/white"
+                android:background="@drawable/app_background"
+                android:text="Send Quoate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <Button
+                android:id="@+id/btn_cancel_quote"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:textStyle="normal"
+                android:textColor="@color/app_color"
+                android:background="@drawable/app_backcground_border_ractangle"
+                android:text="Cancel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

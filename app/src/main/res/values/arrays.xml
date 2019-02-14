@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="icontitles">
+        <item>Home</item>
+        <item>Profile</item>
+        <item>Requests </item>
+        <item>Quotes</item>
+        <item>Messages</item>
+       <item>Buy Credits</item>
+        <item>Transactions</item>
+        <item>Setting</item>
+    </string-array>
+
+    <array name="icons">
+        <item>@drawable/ic_account_box</item>
+        <item>@drawable/ic_account_box</item>
+        <item>@drawable/ic_account_box</item>
+        <item>@drawable/ic_account_box</item>
+        <item>@drawable/ic_account_box</item>
+    </array>
+
+</resources>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_color"
+    tools:context=".ui.fragment.LoginFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<ScrollView
+    android:layout_alignParentBottom="true"
+    android:layout_gravity="bottom"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:gravity="bottom"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="38dp">
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:paddingTop="20dp"
+            android:tint="@color/white"
+            android:id="@+id/ep_logo"
+            android:src="@drawable/easypro_logo"
+            android:layout_width="match_parent"
+            android:layout_height="80dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:text="Login to get access"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:text="Enter Username"
+            android:textColor="@color/white"
+            android:textStyle="normal" />
+
+        <EditText
+            android:textSize="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/white_corner_border"
+            android:hint="Beckham@gmail.com"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="16dp"
+            android:paddingTop="10dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/gray_h"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:text="Enter Password"
+            android:textColor="@color/white"
+            android:textStyle="normal" />
+
+        <EditText
+            android:textSize="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/white_corner_border"
+            android:hint="123456"
+            android:inputType="textPassword"
+            android:paddingLeft="16dp"
+            android:paddingTop="10dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/gray_h"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/whitebackground"
+            android:text="Login "
+            android:textColor="@color/app_color"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="20dp"
+            android:text="Lost your Password"
+            android:textColor="@color/white"
+            android:textStyle="normal" />
+
+        <android.support.v7.widget.CardView
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/cv_fb_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/fb_color"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            app:cardBackgroundColor="@color/fb_color"
+            app:cardCornerRadius="5dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="0.3dp"
+                    android:layout_height="50dp"
+                    android:layout_toRightOf="@id/ic_fb"
+                    android:background="@color/black" />
+
+                <ImageView
+                    android:id="@+id/ic_fb"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:src="@drawable/ic_fb_logo"
+                    android:tint="@color/white" />
+
+                <TextView
+                    android:paddingRight="12dp"
+                    android:paddingLeft="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/ic_fb"
+                    android:gravity="center_vertical"
+                    android:text="Login With Facebook"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Not a Member Yet ?"
+                android:textColor="@color/white"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_marginLeft="6dp"
+                android:id="@+id/tv_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SIGNUP"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_color"
+        android:orientation="vertical"
+        android:padding="40dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/image_profile" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="David Beckham"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Customemr"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/app_color"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <LinearLayout
+            android:id="@+id/ll_profile_details"
+            android:paddingTop="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:paddingBottom="4dp"
+            android:id="@+id/tv_profile_details"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profile Details"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+            <View
+                android:id="@+id/view_profile_details"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:layout_width="140dp"
+                android:layout_height="3dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_change_password"
+            android:paddingTop="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:paddingBottom="4dp"
+            android:id="@+id/tv_change_password"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Change Password"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+           <View
+               android:id="@+id/view_change_password"
+               android:visibility="gone"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:layout_width="146dp"
+                android:layout_height="3dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_profile_details_opern"
+        android:padding="30dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:weightSum="6">
+
+            <ImageView
+                android:tint="@color/app_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_account_box" />
+
+            <ImageView
+                android:tint="@color/app_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_mail" />
+
+            <ImageView
+                android:tint="@color/app_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_phone1" />
+            <ImageView
+                android:tint="@color/app_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_location" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:gravity="center_vertical"
+                android:hint="David Backham"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray_a"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:hint="Backham@gmail.com"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray_a"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:hint="+ 91 98985478589"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray_a"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:hint="Palasia indore"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray_a"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_change_password_open"
+        android:padding="30dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:weightSum="6">
+
+            <ImageView
+                android:tint="@color/app_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_lock" />
+
+            <ImageView
+                android:tint="@color/app_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_lock" />
+
+            <ImageView
+                android:tint="@color/app_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_lock" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:gravity="center_vertical"
+                android:hint="Current Password"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray_a"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:hint="New Password"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray_a"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:hint="Confirm Password"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray_a"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+    </LinearLayout>
+        <Button
+            android:id="@+id/btn_save_password"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="Done"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/app_background_color_a"
+            android:layout_width="150dp"
+            android:layout_height="30dp" />
+    </LinearLayout>
+</LinearLayout>
+</RelativeLayout>
