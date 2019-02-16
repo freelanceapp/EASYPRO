@@ -1,5 +1,6 @@
 package com.infobite.technology.ui.activity;
 
+import android.content.Intent;
 import android.support.annotation.ColorInt;
 import android.support.annotation.ColorRes;
 import android.support.v4.app.Fragment;
@@ -8,6 +9,8 @@ import android.support.v4.content.ContextCompat;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.infobite.technology.R;
@@ -18,12 +21,8 @@ import com.infobite.technology.menu.SimpleItem;
 import com.infobite.technology.ui.fragment.BuyCreditsFragment;
 import com.infobite.technology.ui.fragment.HomeFragment;
 import com.infobite.technology.ui.fragment.MessagesFragment;
-import com.infobite.technology.ui.fragment.ProfileFragment;
-import com.infobite.technology.ui.fragment.QuotesFragment;
-import com.infobite.technology.ui.fragment.RequstesFragment;
 import com.infobite.technology.ui.fragment.SettingsFragment;
 import com.infobite.technology.ui.fragment.TransactionsFragment;
-import com.infobite.technology.ui.fragment.VendorProfileFragment;
 import com.infobite.technology.ui.fragment.VendorQuationFragment;
 import com.infobite.technology.ui.fragment.VendorRequestFragment;
 import com.infobite.technology.utils.BaseActivity;
@@ -138,36 +137,52 @@ public class MainActivity extends BaseActivity implements DrawerAdapter.OnItemSe
         }
         public void onItemSelected(int position) {
             if (position == NAVall) {
+                ((ImageView)findViewById(R.id.iv_search)).setVisibility(View.VISIBLE);
+                ((ImageView)findViewById(R.id.iv_edit)).setVisibility(View.GONE);
                 toolbartitile.setText(Constant.HOME);
                 HomeFragment homeFragment = new HomeFragment();
                 Utility.setFragment(homeFragment, mContext, Constant.HOME);
                 slidingRootNav.closeMenu();
             } else if (position == NAVprofile) {
+                ((ImageView)findViewById(R.id.iv_search)).setVisibility(View.GONE);
+                ((ImageView)findViewById(R.id.iv_edit)).setVisibility(View.VISIBLE);
+                startActivity(new Intent(mContext, VendorProfileActivty.class));
                 toolbartitile.setText(Constant.VENDORPROFILE);
-                VendorProfileFragment fragment = new VendorProfileFragment();
+                /*
+                VendorProfileActivty fragment = new VendorProfileActivty();
                 Utility.setFragment(fragment, mContext, Constant.VENDORPROFILE);
-                slidingRootNav.closeMenu();
+                slidingRootNav.closeMenu();*/
             } else if (position == NAVRequstes) {
+                ((ImageView)findViewById(R.id.iv_search)).setVisibility(View.GONE);
+                ((ImageView)findViewById(R.id.iv_edit)).setVisibility(View.GONE);
                 toolbartitile.setText(Constant.VENDORREQUEST);
                 VendorRequestFragment fragment = new VendorRequestFragment();
                 Utility.setFragment(fragment, mContext, Constant.VENDORREQUEST);
                 slidingRootNav.closeMenu();
             } else if (position == NAVQuotes) {
+                ((ImageView)findViewById(R.id.iv_search)).setVisibility(View.GONE);
+                ((ImageView)findViewById(R.id.iv_edit)).setVisibility(View.GONE);
                 toolbartitile.setText(Constant.VENDORQUOTATION);
                 VendorQuationFragment fragment = new VendorQuationFragment();
                 Utility.setFragment(fragment, mContext, Constant.VENDORQUOTATION);
                 slidingRootNav.closeMenu();
             } else if (position == NAVmessages) {
+                ((ImageView)findViewById(R.id.iv_search)).setVisibility(View.VISIBLE);
+                ((ImageView)findViewById(R.id.iv_edit)).setVisibility(View.GONE);
                 toolbartitile.setText(Constant.VENDORMESSAGES);
                 MessagesFragment fragment = new MessagesFragment();
                 Utility.setFragment(fragment, mContext, Constant.VENDORMESSAGES);
                 slidingRootNav.closeMenu();
             } else if (position == NAvbuycredits) {
+                ((ImageView)findViewById(R.id.iv_search)).setVisibility(View.GONE);
+                ((ImageView)findViewById(R.id.iv_edit)).setVisibility(View.GONE);
                 toolbartitile.setText(Constant.VBUYCREDITS);
                 BuyCreditsFragment fragment = new BuyCreditsFragment();
                 Utility.setFragment(fragment, mContext, Constant.VBUYCREDITS);
                 slidingRootNav.closeMenu();
             } else if (position == NAVTransactions) {
+                ((ImageView)findViewById(R.id.iv_search)).setVisibility(View.VISIBLE);
+                ((ImageView)findViewById(R.id.iv_edit)).setVisibility(View.GONE);
                 toolbartitile.setText(Constant.VTRANSACTIONS);
                 TransactionsFragment fragment = new TransactionsFragment();
                 Utility.setFragment(fragment, mContext, Constant.VTRANSACTIONS);

@@ -17,6 +17,7 @@
         <activity android:name=".ui.activity.HomeFragmentActivity" />
         <activity android:name=".ui.activity.HomeOfficeRenovationActivity" />
         <activity android:name=".ui.activity.VendorInformationActivity" />
+        <activity android:name=".ui.activity.VendorProfileActivty"/>
         <activity android:name=".ui.activity.HomeRequirementActivity" />
         <activity android:name=".ui.activity.SplashActivity">
             <intent-filter>

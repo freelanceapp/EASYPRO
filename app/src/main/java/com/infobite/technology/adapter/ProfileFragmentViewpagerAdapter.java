@@ -15,8 +15,8 @@ public class ProfileFragmentViewpagerAdapter extends FragmentPagerAdapter {
     public ProfileFragmentViewpagerAdapter(FragmentManager fm, int tabCount) {
         super(fm);
         this.tabCount = tabCount;
-    }
 
+    }
     @Override
     public Fragment getItem(int i) {
         switch (i){
@@ -33,6 +33,6 @@ public class ProfileFragmentViewpagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 3;
+        return tabCount;
     }
 }

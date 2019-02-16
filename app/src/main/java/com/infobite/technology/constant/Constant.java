@@ -17,4 +17,5 @@ public class Constant {
     public static final String VENDORREQUEST = "Requests";
     public static final String VENDORQUOTATION = "Quotes";
     public static final String VENDORMESSAGES = "Messages";
+    public static final String ACTIVITY_TYPE = "profile";
 }
